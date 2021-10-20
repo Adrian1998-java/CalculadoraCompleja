@@ -102,7 +102,7 @@ public class CalculadoraCompleja extends Application {
 		imaginarioNumDos.textProperty().bindBidirectional(complejoSegundo.imaginarioProperty(), new NumberStringConverter());
 		
 		realResultado.textProperty().bindBidirectional(complejoResult.realProperty(), new NumberStringConverter());
-		imaginarioResultado.textProperty().bindBidirectional(complejoResult.realProperty(), new NumberStringConverter());
+		imaginarioResultado.textProperty().bindBidirectional(complejoResult.imaginarioProperty(), new NumberStringConverter());
 		
 		operator.bind(operaciones.getSelectionModel().selectedItemProperty());
 		
