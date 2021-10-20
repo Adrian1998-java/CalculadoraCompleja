@@ -108,9 +108,11 @@ public class CalculadoraCompleja extends Application {
 		
 		//listeners
 		
+		operaciones.getSelectionModel().selectFirst();
+		
 		operator.addListener((o, ov, nv) -> onOperatorChanged(nv));
 		
-		operaciones.getSelectionModel().selectFirst();
+
 //		realResultado.textProperty().bind(
 //				Bindings
 //					.when(operaciones.getValue().equalsIgnoreCase("+"))
